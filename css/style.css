@@ -201,20 +201,24 @@
   color: #7B3F00;
   margin: 0 auto 16px;
   max-width: 100%;
-  min-height: 160px;
+  width: 100%;
+  min-height: 180px;
   position: relative;
   border: 2px solid #D4A01766;
+  box-sizing: border-box;
+  overflow: visible;
 }
 .testimonial-img {
-  width: 46px;
-  height: 46px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 50%;
   border: 2.5px solid #D4A017;
   position: absolute;
-  top: -23px;
+  top: -35px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .testimonial-name {
   font-weight: 700;
@@ -236,6 +240,7 @@
   box-shadow: 0 4px 13px rgba(212, 160, 23, 0.08);
   border: 2px solid #D4A01799;
   padding: 23px 11px;
+  /* max-width: 470px; */
   margin: auto;
 }
 .contact-form .form-label {
@@ -320,6 +325,12 @@
 .footer .footer-section p {
   font-size: 1.1rem;
   margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-section p a {
+  margin: 0 5px;
 }
 
 /* Responsive Adjustments */
@@ -332,6 +343,18 @@
   }
   .hero-title { font-size: clamp(2.2rem, 5.5vw, 3.2rem); }
   .hero-desc { font-size: 1.2rem; }
+  .footer .footer-section p {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer .footer-section p a {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .footer i {
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -341,15 +364,19 @@
   .navbar-nav .nav-link { padding: 0.5rem 0.8rem; }
   .footer .container { flex-direction: column; }
   .row.justify-content-center {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: hidden;
   }
   .testimonial-card {
     max-width: 100%;
-    margin: 0 auto 16px;
+    width: 100%;
+    margin: 35px auto 16px;
     padding: 20px;
-    transform: none !important;
-    opacity: 1 !important;
+    box-sizing: border-box;
+  }
+  #testimonials .container {
+    overflow-x: hidden;
+    padding: 0 10px;
   }
   .product-card {
     opacity: 1 !important;
@@ -365,5 +392,6 @@
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    overflow-x: hidden;
   }
 }
