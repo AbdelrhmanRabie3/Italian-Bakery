@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Italian Bakery</title>
+    <meta
+      name="description"
+      content="Savor authentic Italian breads, pastries, and desserts at Italian Artisan Bakery. Freshly baked daily with traditional recipes!"
+    />
+    <meta
+      name="keywords"
+      content="Italian bakery, artisan bread, ciabatta, focaccia, cannoli, tiramisu, biscotti, sfogliatella, fresh desserts, Italian pastries"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Serif+4:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="80"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          ><i class="fas fa-bread-slice"></i> Italian Bakery</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products"
+                ><i class="fas fa-croissant"></i> Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="fas fa-store"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" id="hero">
+      <div class="container hero-content" data-aos="fade-up">
+        <h1 class="hero-title mb-4">Italian Bakery</h1>
+        <p class="hero-desc mb-4">
+          Enjoy handcrafted Italian breads, pastries, and desserts made with
+          timeless recipes and the finest ingredients.
+        </p>
+        <a href="#products" class="hero-btn"
+          ><i class="fas fa-utensil-spoon"></i> Order Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Products / Gallery -->
+    <section class="py-5" id="products">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Our Italian Creations</h2>
+          <div class="section-subtitle">
+            Baked fresh daily with love and tradition
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/cannolie.jpg"
+                alt="Cannoli"
+              />
+              <div class="product-content">
+                <div class="product-title">Cannoli</div>
+                <div class="product-desc">
+                  Cannoli are classic Sicilian pastries with a crispy shell
+                  filled with sweet ricotta cream. Often topped with pistachios,
+                  chocolate chips, or candied fruit. They offer a perfect
+                  balance of crunch and creamy richness.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="60"
+          >
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/Sfogliatella.jpg"
+                alt="Sfogliatella"
+              />
+              <div class="product-content">
+                <div class="product-title">Sfogliatella</div>
+                <div class="product-desc">
+                  Sfogliatella is a traditional Neapolitan pastry known for its
+                  crisp, shell-like layers. It’s typically filled with a sweet
+                  semolina and ricotta mixture, flavored with citrus zest.
+                  Delicate, flaky, and rich—it's a true Italian bakery favorite.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="120"
+          >
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/Tiramisu.jpg"
+                alt="Tiramisu"
+              />
+              <div class="product-content">
+                <div class="product-title">Tiramisu</div>
+                <div class="product-desc">
+                  Tiramisu is a classic Italian dessert made with layers of
+                  coffee-soaked ladyfingers and mascarpone cream. It's topped
+                  with a dusting of cocoa powder for a rich, bittersweet finish.
+                  Light, creamy, and full of flavor—perfect for coffee lovers.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/Biscotti.jpg"
+                alt="Biscotti"
+              />
+              <div class="product-content">
+                <div class="product-title">Biscotti</div>
+                <div class="product-desc">
+                  Biscotti are crunchy, twice-baked Italian cookies
+                  traditionally made with almonds. They’re perfect for dipping
+                  in coffee or sweet dessert wine. Crisp, nutty, and lightly
+                  sweet—a classic Italian treat.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="60"
+          >
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/Crostata.jpg"
+                alt="Crostata"
+              />
+              <div class="product-content">
+                <div class="product-title">Crostata</div>
+                <div class="product-desc">
+                  Crostata is a rustic Italian tart made with a buttery
+                  shortcrust pastry and filled with jam or fresh fruit. It’s
+                  often lattice-topped and baked until golden. Simple, fruity,
+                  and charming—perfect for any time of day.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="zoom-in"
+            data-aos-delay="120"
+          >
+            <div class="product-card h-100">
+              <img
+                class="product-img"
+                src="images/Zeppole.jpg"
+                alt="Sfogliatella"
+              />
+              <div class="product-content">
+                <div class="product-title">Zeppole</div>
+                <div class="product-desc">
+                  Zeppole are light and airy Italian doughnuts, deep-fried until
+                  golden and dusted with powdered sugar. They can be filled with
+                  custard, ricotta, or jelly, especially during celebrations.
+                  Soft inside, crispy outside—a festive sweet delight.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-5" id="about">
+      <div class="container">
+        <div class="about-section mx-auto" data-aos="fade-up">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6">
+              <img
+                src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=650&q=80"
+                alt="Italian Artisan Bakery"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 px-md-4">
+              <h2 class="section-title">About Us</h2>
+              <div class="about-text">
+                <p>
+                  <b>Welcome to Italian Artisan Bakery.</b><br />
+                  Inspired by traditional Italian baking, we craft authentic
+                  recipes handed down through generations.
+                </p>
+                <p>
+                  Every loaf, pastry, and dessert is made with natural
+                  ingredients and time-honored methods, capturing the essence of
+                  Italy. Our mission is to share the warmth of Italian baking
+                  with every bite. <br />
+                  <span class="fw-bold">Buon Appetito!</span>
+                </p>
+              </div>
+              <a href="#contact" class="custom-btn mt-3"
+                ><i class="fas fa-envelope"></i> Get in Touch</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5" id="testimonials">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">What Our Customers Say</h2>
+          <div class="section-subtitle">
+            Rated <span class="text-warning fw-bold">5/5</span> by hundreds of
+            food lovers
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="80">
+            <div class="testimonial-card h-100">
+              <img
+                class="testimonial-img"
+                src="https://randomuser.me/api/portraits/women/41.jpg"
+                alt="Customer Review"
+              />
+              <div class="testimonial-stars mb-2">★★★★★</div>
+              <div>
+                <q
+                  >The Sfogliatella is just like I tasted in Florence — crusty
+                  outside, airy inside. True Italian experience!</q
+                >
+              </div>
+              <p class="testimonial-name">- Maria T.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="130">
+            <div class="testimonial-card h-100">
+              <img
+                class="testimonial-img"
+                src="https://randomuser.me/api/portraits/men/18.jpg"
+                alt="Customer Review"
+              />
+              <div class="testimonial-stars mb-2">★★★★★</div>
+              <div>
+                <q
+                  >The cannoli is divine! Crunchy, creamy, and full of flavor.
+                  This is my new favorite spot.</q
+                >
+              </div>
+              <p class="testimonial-name">- Luca R.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-delay="180">
+            <div class="testimonial-card h-100">
+              <img
+                class="testimonial-img"
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Customer Review"
+              />
+              <div class="testimonial-stars mb-2">★★★★★</div>
+              <div>
+                <q
+                  >The tiramisu is out of this world! It’s like a hug from Italy
+                  itself.</q
+                >
+              </div>
+              <p class="testimonial-name">- Sofia B.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="section-subtitle">Order, ask, or just say ciao!</div>
+        </div>
+        <form class="contact-form" data-aos="zoom-in">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name*</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email*</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message*</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="custom-btn mt-2 w-100">
+            <i class="fas fa-paper-plane"></i> Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h5>Contact Us</h5>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@italianartisanbakery.com"
+              >info@italianartisanbakery.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+1234567890">+123 456 7890</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h5>Follow Us</h5>
+          <p>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h5>Legal</h5>
+          <p>
+            <a href="#"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+          </p>
+          <p>Italian Artisan Bakery © 2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libraries: Bootstrap, AOS, Font Awesome, scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
