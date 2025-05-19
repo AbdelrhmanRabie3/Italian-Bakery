@@ -186,6 +186,11 @@
   margin-top: 27px;
   box-shadow: 0 2px 16px rgba(123, 63, 0, 0.05);
 }
+.about-section img
+{
+  max-height: 600px;
+  width: 100%;
+}
 .about-text {
   font-size: 1.12rem;
   color: #3C2F2F;
